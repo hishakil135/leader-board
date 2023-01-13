@@ -97,3 +97,33 @@ hr {
   font-size: 14px;
   color: #ed6b4f;
 }
+/* media queries */
+/* for mobile */
+@media screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+  }
+  .player,
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .players,
+  .blog1,
+  .courses {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* for tablets */
+@media screen and (min-width: 689px) and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+  .player,
+  .blogs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .courses {
+    flex-direction: column;
+  }
+}
